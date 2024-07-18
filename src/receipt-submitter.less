@@ -1,0 +1,125 @@
+.receipt-submitter {
+    min-height: calc(100vh - 64px);
+
+    &__left-container {
+        background-color: #f5f5f5;
+        padding: 24px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__menu-tab {
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+
+        img {
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    .active-tab {
+        background-color: #dfeeec;
+    }
+
+    &__right-container {
+        background-color: white;
+        min-height: calc(100vh - 64px);
+        padding: 24px;
+    }
+
+    &__PCard-select {
+        .ant-select-selector {
+            width: 150px;
+        }
+        .ant-select-selection-item {
+            .anticon-check {
+                display: none;
+            }
+        }
+
+        .ant-select-item-option-selected {
+            background-color: #dfeeec !important;
+            font-weight: 400;
+
+            svg {
+                color: #277c6c !important;
+            }
+        }
+
+        .ant-select-selection-item > div > div > div:nth-child(2) {
+            display: none;
+        }
+    }
+
+    &__posted-transactions {
+        margin-top: 24px;
+        padding: 16px;
+        border: 1px solid #b7b7b7;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    &__receipt-container {
+        gap: 16px;
+    }
+}
+
+.receipt {
+    border-color: #dadada;
+    min-width: 323px;
+
+    .ant-card-body {
+        padding: 16px;
+    }
+
+    .ant-divider {
+        border-color: #00000026;
+        margin: 8px 0 4px 0;
+    }
+
+    &__id {
+        font-size: 10px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    &__title {
+        font-size: 14px;
+    }
+
+    &__image-container {
+        // margin-right: 16px;
+
+        img {
+            border: 1px solid #dadada;
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+    }
+
+    &__details {
+        background-color: #0000000a;
+        border-radius: 4px;
+        flex-grow: 1;
+        height: 48px;
+        margin-bottom: 4px;
+        padding: 3px 8px;
+    }
+}
+
+.ant-select-selection-item .ant-select-item-option-content > div {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.ant-select-dropdown {
+    padding: 8px;
+
+    .ant-divider {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+}
